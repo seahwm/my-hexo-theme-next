@@ -1,0 +1,16 @@
+name: Dispatch Update to Parent Repo
+on:
+  push:
+    branches:
+      - feature/cicd # Or your desired branch
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch update to Parent Repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.MY_TOKEN }} # Personal Access Token
+          repository: seahwm/my-hexo-blog # Replace with your parent repo
+          event-type: submodule-updated
