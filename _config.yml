@@ -998,4 +998,4 @@ js: js
 images: images
 
 ## My Customization
-navigation: true
+navigation: false
