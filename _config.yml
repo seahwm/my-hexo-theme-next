@@ -996,3 +996,6 @@ vendors:
 css: css
 js: js
 images: images
+
+## My Customization
+navigation: false
