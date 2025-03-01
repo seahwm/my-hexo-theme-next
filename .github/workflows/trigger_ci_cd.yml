@@ -2,7 +2,7 @@ name: Dispatch Update to Parent Repo
 on:
   push:
     branches:
-      - feature/cicd # Or your desired branch
+      - v7.8.0-swm # Or your desired branch
 
 jobs:
   dispatch:
